@@ -1,0 +1,11 @@
+.DS_Store
+.env
+mysql/volumes
+mysql/volumes/*
+apps/.dotnet
+apps/.dotnet/*
+apps/.vscode-server
+apps/.vscode-server/*
+apps/docs/*
+apps/tmp
+apps/tmp/*
