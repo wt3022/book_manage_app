@@ -1,0 +1,4 @@
+.dotnet/*
+.vscode-server/*
+docs/*
+tmp/*

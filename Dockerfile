@@ -9,6 +9,10 @@ RUN apt update && apt upgrade -y \
     && apt install -y sudo \
     curl \
     build-essential \
+    vim \
+    git \
+    openssh-client \
+    socat \
     && curl -OL "https://go.dev/dl/go${LANG_VERSION}.linux-amd64.tar.gz" \
     && rm -rf /usr/local/go \
     && tar -C /usr/local -xzf "go${LANG_VERSION}.linux-amd64.tar.gz" \

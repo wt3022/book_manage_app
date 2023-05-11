@@ -1,0 +1,5 @@
+version: 3
+
+database:
+  max_idle_conns: 10
+  max_open_conns: 100

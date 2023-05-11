@@ -9,3 +9,5 @@ apps/.vscode-server/*
 apps/docs/*
 apps/tmp
 apps/tmp/*
+apps/.git/*
+go/bin/*
