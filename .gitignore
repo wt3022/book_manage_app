@@ -1,13 +1,19 @@
+# 余分なファイル
 .DS_Store
 .env
+.git
+.git/*
+
+# 拡張機能用のファイル
+go/bin/*
+
+# mysql関連ファイル
 mysql/volumes
 mysql/volumes/*
-apps/.dotnet
-apps/.dotnet/*
-apps/.vscode-server
-apps/.vscode-server/*
+
+# apps内の自動生成ファイル
 apps/docs/*
 apps/tmp
 apps/tmp/*
-apps/.git/*
-go/bin/*
+
+
