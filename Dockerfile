@@ -25,11 +25,9 @@ RUN useradd -ms /bin/bash ${APP_USERNAME} && \
 
 
 USER ${APP_USERNAME}
-ENV HOME=${HOMEDIR} PATH=$PATH:/usr/local/go/bin:/${HOMEDIR}/go/bin GOPATH=${HOMEDIR}/go
+ENV HOME=${HOMEDIR} PATH=$PATH:/usr/local/go/bin:/${HOMEDIR}/go/bin:${HOMEDIR}/project/apps/scripts
 
-WORKDIR ${HOMEDIR}/apps
-
-RUN mkdir -p $HOME/go/bin HOME/go/pkg $HOME/go/src
+WORKDIR ${HOMEDIR}/project
 
 COPY ./apps/go.mod .
 COPY ./apps/go.sum .

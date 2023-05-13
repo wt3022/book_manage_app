@@ -30,8 +30,7 @@ services:
     ports:
       - ${APP_PORT}:8080
     volumes:
-      - ./:/home/${APP_USERNAME}/apps
-      - ./go/bin:/home/${APP_USERNAME}/go/bin
+      - ./:/home/${APP_USERNAME}/project
     tty: true
 
     environment:
