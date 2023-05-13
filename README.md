@@ -17,7 +17,7 @@ docker compose exec go_app bash
 
 
 # コンテナ内
-コンテナ内に接続後、以下のコマンドを入力してください。<br>
+コンテナ内に接続後、appsディレクトリで以下のコマンドを入力してください。<br>
 (server.envにはサーバーの起動情報が記載されています。)
 ```bash
 cp server.env .env
