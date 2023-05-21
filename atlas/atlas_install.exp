@@ -1,0 +1,10 @@
+#!/bin/expect -f
+
+set timeout -1
+spawn ./atlas/atlasgo.sh
+expect {
+    -re {.*\[y/N\]} {
+        send "y\r"
+    }
+}
+expect eof
